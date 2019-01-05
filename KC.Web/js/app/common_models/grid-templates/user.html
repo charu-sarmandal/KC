@@ -1,0 +1,17 @@
+﻿        <table id="grid" ng-table="vm.tableParams" class="table table-condensed table-bordered table-striped">
+
+    <tr ng-repeat="row in $data">
+        <td>
+            <button type="button" class="btn btn-sm btn-outline-secondary" title="Edit" ng-click="vm.edit(row)"><i class="fa fa-edit"></i></button>
+            <button type="button" class="btn btn-sm btn-outline-danger" title="Delete" ng-click="vm.delete(row)"><i class="fa fa-trash-o"></i></button>
+
+        </td>
+        <td data-title="'Full Name'" filter="{name: 'text'}" sortable="'name'">{{row.name}}</td>
+        <td data-title="'Age'" filter="{age: 'number'}" sortable="'age'">{{row.age}}</td>
+        <td data-title="'WorkEmail'">{{row.workEmail}}</td>
+    </tr>
+    <tr ng-show="vm.loading">
+        <td colspan="4">Please wait, data is loading....</td>
+    </tr>
+</table>
+    

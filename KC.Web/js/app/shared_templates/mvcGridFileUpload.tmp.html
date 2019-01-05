@@ -1,0 +1,16 @@
+﻿<div style="min-width:300px;min-height:300px;">
+    
+    <div ng-if="!vm.file">
+        <h3>File Upload</h3>
+
+        <input type="file" file-model="vm.importFile" />
+        <button ng-click="vm.upload()">upload me</button>
+    </div>
+
+    <div ng-if="vm.file">
+        <span>{{vm.file}}
+        </span>
+        <mvc-grid file="vm.file"></mvc-grid>
+
+    </div>
+</div>

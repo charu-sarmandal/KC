@@ -1,0 +1,31 @@
+﻿<div>
+
+    <div>
+        <div>Filters</div>
+        <div>
+            Name: <input type="text" ng-model="vm.filter.name" />
+            <!--<select ng-model="vm.filter." ng-options="x.model for x in cars"></select>
+            <select ng-model="selectedCar" ng-options="x.model for x in cars"></select>-->
+        </div>
+        
+        <div><button ng-click="vm.search()" >Filter</button></div>
+
+        <div></div>
+
+    </div>
+
+    <div>
+        <div>Actions</div>
+        <button ng-click="vm.add()">Add New</button>
+        <button ng-click="vm.export()">Export To Excel</button>
+        <button ng-click="vm.uploadFile()">Upload Excel</button>
+        <button ng-click="vm.approve()">File Approve</button>
+    </div>
+
+    <h4><i class="fa fa-pie-chart fa-fw"></i> {{vm.title}}</h4>
+    <div>
+        <p ng-if="vm.loading">Loading...</p>
+        <div ng-if="!vm.loading" ui-grid="vm.gridOptions"></div>
+
+    </div>
+</div>

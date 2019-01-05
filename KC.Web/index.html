@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html class="ng-scope" lang="en" ng-app="KC">
+<head>
+    <style type="text/css">
+        @charset "UTF-8";
+
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> - KC CRM</title>
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/sb-admin.css" rel="stylesheet">
+    <link href="/css/layout.css" rel="stylesheet">
+    <link href="/css/ui-grid.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div>
+        <h3 class="text-muted">Dashboard</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li ui-sref-active="active"><a href="#/home">Home</a></li>
+                        <li ui-sref-active="active"><a href="#/report">Report</a></li>
+                        <li ui-sref-active="active"><a href="#/label">Label</a></li>
+                        <li ui-sref-active="active"><a href="#/sublabel">SubLabel</a></li>
+                        <li ui-sref-active="active"><a href="#/tag">Tag</a></li>
+
+                        <li ui-sref-active="active"><a href="#/BuyInventory">BuyInventory</a></li>
+                        <li ui-sref-active="active"><a href="#/Dashboard">Dashboard</a></li>
+                        <li ui-sref-active="active"><a href="#/Menu">Menu</a></li>
+                        <li ui-sref-active="active"><a href="#/Product">Product</a></li>
+                        <li ui-sref-active="active"><a href="#/ProductDetail">ProductDetail</a></li>
+                        <li ui-sref-active="active"><a href="#/SellInventory">SellInventory</a></li>
+                        <li ui-sref-active="active"><a href="#/HtmlTemplate">Template</a></li>
+                        <li ui-sref-active="active"><a href="#/ProductLabelMapper">ProductLabelMapper</a></li>
+                        <li ui-sref-active="active"><a href="#/ScheduleProductLabelMapper">ScheduleProductLabelMapper</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <div ui-view></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /#wrapper -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/angular.js"></script>
+    <script src="/js/ui-router.js"></script>
+    <script src="/js/angular-animate.js"></script>
+    <script src="/js/ui-bootstrap.js"></script>
+    <script src="/js/ui-grid.js"></script>
+    <script src="/js/ng-file-upload-5.0.9.js"></script>
+    <script src="/js/app/app.js"></script>
+    <script src="/js/app/authentication/LoginController.js"></script>
+
+    <!--<script src="/js/app/label/AddItemDirective.js"></script>
+    <script src="/js/app/label/EditItemDirective.js"></script>
+    <script src="/js/app/label/labelSvc.js"></script>-->
+
+    <script src="/js/app/common_models/CommonSvc.js"></script>
+    <script src="/js/app/common_models/CrudItemDirective.js"></script>
+
+    <script src="/js/app/customer/AddCustomerDirective.js"></script>
+    <script src="/js/app/customer/CustomerDetailsDirective.js"></script>
+    <script src="/js/app/customer/CustomerListController.js"></script>
+    <script src="/js/app/customer/customerSvc.js"></script>
+    <script src="/js/app/customer/EditCustomerDirective.js"></script>
+    <script src="/js/app/opportunity/AddOpportunityDirective.js"></script>
+    <script src="/js/app/profile/EditProfileController.js"></script>
+    <script src="/js/app/report/LostCustomersReportDirective.js"></script>
+    <script src="/js/app/report/NewCustomersReportDirective.js"></script>
+    <script src="/js/app/risk/AddRiskDirective.js"></script>
+    <script src="/js/app/utility/ArrayExtensions.js"></script>
+    <script src="/js/app/utility/FormGroupValidationDirective.js"></script>
+    <script src="/js/app/utility/InputValidationIconsDirective.js"></script>
+
+    <script src="/js/app/utility/NgGridDirective.js"></script>
+
+    <script src="/js/app/utility/MvcGridDirective.js"></script>
+    <script src="/js/app/utility/MvcGridFileUpload.js"></script>
+    <script src="/js/app/utility/ParseDateFilter.js"></script>
+
+
+</body>
+</html>

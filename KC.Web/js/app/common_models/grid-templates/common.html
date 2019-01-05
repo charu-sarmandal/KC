@@ -1,0 +1,13 @@
+﻿<div>
+
+    <div>
+        <button ng-click="vm.add()">Add</button>
+        <button class="btn btn-link" ng-click="vm.export()">
+            <span class="glyphicon glyphicon-share"></span> Export to Excel
+        </button>
+    </div>
+
+    
+    <div ng-include="vm.getActualTemplateContent()"></div>
+
+</div>

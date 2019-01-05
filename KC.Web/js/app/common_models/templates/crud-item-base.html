@@ -1,0 +1,14 @@
+﻿
+<form novalidate
+      name="vm.form"
+      ng-submit="vm.form.$valid && vm.save()">
+    <fieldset ng-disabled="vm.saving">
+
+        <div ng-include="vm.getActualTemplateContent()"></div>
+
+
+        <div class="modal-footer">
+            <button class="btn btn-success">Save</button>
+        </div>
+    </fieldset>
+</form>

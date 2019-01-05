@@ -1,0 +1,26 @@
+﻿<form novalidate
+      name="vm.form"
+      ng-submit="vm.form.$valid && vm.save()">
+    <fieldset ng-disabled="vm.saving">
+
+
+        <div class="modal-header">
+            <h3 class="modal-title">Edit Tag</h3>
+        </div>
+
+        <div class="modal-body ">
+
+            <div class="alert alert-info" ng-hide="vm.errorMessage != null">
+                Make changes to the label below.
+            </div>
+            <div class="alert alert-danger" ng-show="vm.errorMessage != null">
+                {{vm.errorMessage}}
+            </div>            
+            <div ng-include="vm.getActualTemplateContent()"></div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-success">Save</button>
+            <button type="button" class="btn btn-warning" ng-click="$parent.$dismiss()">Cancel</button>
+        </div>
+    </fieldset>
+</form>
