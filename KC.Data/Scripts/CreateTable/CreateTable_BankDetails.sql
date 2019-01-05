@@ -9,7 +9,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 SET ANSI_PADDING ON
-GO
+GO 
 
 CREATE TABLE [dbo].[BankDetails](
 ID bigint not NULL primary key, --primary key
